@@ -1,22 +1,6 @@
 
-.client-list{
-    list-style: none;
-    display: block;
-}
-
-ul {
-    padding: 1em;
-    border: solid thin;
-    border-color: black;
-    margin-bottom: calc(var(--base-margin));
-}
-
-li{
-    align-self: auto;
-}
-
 .client{
-    max-width: 75%;
+    max-width: 30%;
     align-content: flex-end;
     justify-content: space-between;
 }
@@ -27,15 +11,32 @@ li{
 }
 
 .client-info{
-    max-height:min-content;
+    max-height: min-content;
     display: inline-flex;
     flex-direction: column;
 }
 
+.client-txt{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.client-list{
+    list-style: none;
+    display: block;
+}
+
+ul {
+    border-bottom-left-radius: 1% 5%;
+    border-bottom-right-radius: 1% 5%;
+    border-top-left-radius: 1% 5%;
+    border-top-right-radius: 1% 5%;
+    padding: 1em;
+    box-shadow: 0 0.2em 0.7em 0em rgba(0, 0, 0, 0.4);
+    transition: margin 0.4s, box-shadow 0.4s;
+}
+
 ul:hover{
-    margin-bottom: 0.5em;
-    margin-top: 1.5em; 
-    box-shadow: 0 0.2em 1.3em 0em rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.4s;
-    transition: margin 0.4s;
+    margin: 1.5em 0 1.5em 1.5em; 
+    box-shadow: 0 0.4em 0.8em 0em rgba(0, 0, 0, 0.4);
 }
