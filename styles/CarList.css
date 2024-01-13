@@ -1,0 +1,27 @@
+.car-list{
+    list-style: none;
+}
+
+.car-image{
+    display: inline-flex;
+    margin: 0 2em 0 0;
+    width: 19em;
+}
+
+.impr-text{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-header{
+    display: inline-flex;
+}
+
+.car-description{
+    width: 50%;
+}
+
+.mechanic-salary{
+    margin: 0;
+}

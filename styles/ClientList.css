@@ -1,0 +1,41 @@
+
+.client-list{
+    list-style: none;
+    display: block;
+}
+
+ul {
+    padding: 1em;
+    border: solid thin;
+    border-color: black;
+    margin-bottom: calc(var(--base-margin));
+}
+
+li{
+    align-self: auto;
+}
+
+.client{
+    max-width: 75%;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.client button{
+    display: inline-flex;
+    align-self: auto;
+}
+
+.client-info{
+    max-height:min-content;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+ul:hover{
+    margin-bottom: 0.5em;
+    margin-top: 1.5em; 
+    box-shadow: 0 0.2em 1.3em 0em rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.4s;
+    transition: margin 0.4s;
+}
