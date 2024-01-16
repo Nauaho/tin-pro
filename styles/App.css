@@ -20,7 +20,7 @@ p{
 }
 
 .t2{
-
+    
 }
 
 .t3{
@@ -28,6 +28,8 @@ p{
 }
 
 .simple-button{
+    max-width: fit-content;
+    max-height: fit-content;
     border-style: solid;
     border-width: 0.15vmax;
     border-color: rgba(38, 38, 136, 0);
@@ -43,13 +45,13 @@ p{
 }
 
 .simple-button:hover{
-    background-color: white;
-    color: #ba87a6;
-    border-color: #ba87a6;
-}
-
-.simple-button:active{
     background-color: #ffc482;
     color: white;
     border-color: rgba(38, 38, 136, 0);
+}
+
+.simple-button:active{
+    background-color: white;
+    color: #ba87a6;
+    border-color: #ba87a6;
 }
