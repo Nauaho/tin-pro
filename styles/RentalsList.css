@@ -1,0 +1,41 @@
+
+.car-image{
+    display: inline-flex;
+    margin: 0;
+    width: 19em;
+    border-radius: 1vmax;
+}
+
+.car{
+    width: auto;
+}
+
+.rental-info{
+    width: 50vmax;
+}
+
+.rentals-list{
+    padding: 0;
+}
+
+.button-space{
+    margin-bottom: 1em;
+}
+
+.client-info{
+    margin-top: 1em;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-style: solid;
+    border-width: 0.15vmax;
+    border-color: #ba87a6;
+    color: #ba87a6;
+    padding: 1vmax;
+    font-size: 1.2vmax;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+
+.car-info-plate{
+    grid-template-columns: auto; 
+}
