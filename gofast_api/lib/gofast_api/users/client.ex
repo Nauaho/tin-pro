@@ -4,5 +4,6 @@ defmodule GofastApi.Users.Client do
 
   schema "client" do
     field :licence_number, :string, size: (30)
+    be
   end
 end
