@@ -20,10 +20,11 @@ defmodule GofastApiWeb.Router do
     get "/", PageController, :home
   end
 
+  # Other scopes may use custom stacks.
   scope "/api", GofastApiWeb do
     pipe_through :api
 
-    get "/users", UsersController, :users
+    get "/users", UsersController, :list_users
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

@@ -20,7 +20,7 @@ config :gofast_api, GofastApiWeb.Endpoint,
     layout: false
   ],
   pubsub_server: GofastApi.PubSub,
-  live_view: [signing_salt: "grL1e8br"]
+  live_view: [signing_salt: "mtIXHwvM"]
 
 # Configures the mailer
 #

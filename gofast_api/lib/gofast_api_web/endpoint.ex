@@ -7,7 +7,7 @@ defmodule GofastApiWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_gofast_api_key",
-    signing_salt: "d9FWNnDj",
+    signing_salt: "E8spzzOL",
     same_site: "Lax"
   ]
 

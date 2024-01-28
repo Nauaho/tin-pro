@@ -17,7 +17,7 @@ config :gofast_api, GofastApi.Repo,
 # you can enable the server option below.
 config :gofast_api, GofastApiWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "d4NWNU/I2aITPRY0yN8/YzQBItL6xNw9NUI1Lxeug/jGgoMmDRu2oZBJzR9ibOPB",
+  secret_key_base: "4wo4fxLRktFqbKH0RexW+ZIboq+ht37UjlKUs8tLG9MLITxceuhAgHfax4kPlO9f",
   server: false
 
 # In test we don't send emails.

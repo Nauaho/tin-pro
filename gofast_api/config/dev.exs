@@ -7,7 +7,7 @@ config :gofast_api, GofastApi.Repo,
   hostname: "ep-wispy-grass-a2cwgpdj.eu-central-1.aws.neon.tech",
   ssl: true,
   ssl_opts: [
-    server_name_indication: 'ep-wispy-grass-a2cwgpdj.eu-central-1.aws.neon.tech',
+  server_name_indication: 'ep-wispy-grass-a2cwgpdj.eu-central-1.aws.neon.tech',
     verify: :verify_none
   ],
   database: "gofast",
@@ -28,7 +28,7 @@ config :gofast_api, GofastApiWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "PW9ynU7JVZf79p3WkY1WmQ2HuJ76dh7HcHmnc2ROLtpjd6JDQYOlthph7g5BY679",
+  secret_key_base: "8mpHDzqFjHn7wQjVD57Z6obTJ4O7wnXuzG2eXksncmpKqY9mAcwz/sIVxZA9k14x",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
