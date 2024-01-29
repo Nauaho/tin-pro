@@ -9,6 +9,11 @@ defmodule GofastApi.Users.Client do
     belongs_to :user, GofastApi.Users.User, primary_key: true
   end
 
-  #
-  # @foreign_key_type :integer
+  def changeset(client, params) do
+    client
+    |> cast(params, [:licence_number, :user_id])
+    |> validate_required([:licence_number, :user_id])
+    |> validate_length( max: 30)
+    |> unique_constraint(:user_id)
+  end
 end

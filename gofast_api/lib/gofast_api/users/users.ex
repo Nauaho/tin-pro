@@ -8,8 +8,12 @@ defmodule GofastApi.Users do
     Repo.all(from c in Client, preload: [:user])
   end
 
-  def get_client(id) do
-    Repo.get(Client, id) |> Repo.preload(:user)
+  def get_client!(id) do
+    Repo.get!(Client, id) |> Repo.preload(:user)
+  end
+
+  def delete_client(id) do
+
   end
 
 end

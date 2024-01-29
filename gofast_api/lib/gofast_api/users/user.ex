@@ -11,6 +11,13 @@ defmodule GofastApi.Users.User do
   end
 
   def changeset(user, params) do
-
+    user
+    |> cast(params, [:name, :surname, :birthdate, :password, :email])
+    |> validate_required([:name, :surname, :birthdate, :password, :email])
+    |> validate_format(:email, ~r"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$")
+    #validate length of strings
+    |> validat_length()
+    #validate date format
+    |> unique_constraint(:email)
   end
 end
