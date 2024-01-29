@@ -2,5 +2,7 @@ defmodule GofastApi.Cars.Type do
   use Ecto.Schema
   import Ecto.Changeset
 
-  field :type, :string
+  schema "types" do
+    field :type, :string
+  end
 end

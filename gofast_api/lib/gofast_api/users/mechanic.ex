@@ -1,11 +1,13 @@
 defmodule GofastApi.Users.Mechanic do
-    use Ecto.Schema
-    import Ecto.Changeset
+  use Ecto.Schema
+  import Ecto.Changeset
 
-    field :expirience, :integer
-    field :salary, :money
+  schema "mechanics" do
+    field :experience, :integer
+    field :salary, :float
+  end
 
-    def changeset(mechanic, params) do
+  def changeset(mechanic, params) do
 
-    end
+  end
 end

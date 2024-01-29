@@ -24,7 +24,7 @@ defmodule GofastApiWeb.Router do
   scope "/api", GofastApiWeb do
     pipe_through :api
 
-    get "/users", UsersController, :list_users
+    resources "/clients", ClientController
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
