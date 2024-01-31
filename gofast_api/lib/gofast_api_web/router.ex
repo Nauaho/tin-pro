@@ -23,8 +23,11 @@ defmodule GofastApiWeb.Router do
   # Other scopes may use custom stacks.
   scope "/api", GofastApiWeb do
     pipe_through :api
-
     resources "/clients", ClientController
+    resources "/mechanics", MechanicController
+    resources "/cars", CarController
+    resources "/rentals", RentalController
+
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
@@ -38,7 +41,6 @@ defmodule GofastApiWeb.Router do
 
     scope "/dev" do
       pipe_through :browser
-
       live_dashboard "/dashboard", metrics: GofastApiWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end

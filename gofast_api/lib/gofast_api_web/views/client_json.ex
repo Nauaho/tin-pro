@@ -1,23 +1,23 @@
 defmodule GofastApiWeb.ClientJSON do
-  alias GofastApi.Users.Client
+  alias GofastApi.Users.User
 
   def index(%{clients: clients}) do
-    %{data: for(client <- clients, do: data(client))}
+    %{clients: for(client <- clients, do: data(client))}
   end
 
   def show(%{client: client}) do
-    %{data: data(client)}
+    %{client: data(client)}
   end
 
-  def data(%Client{} = client) do
+  def data(%User{} = client) do
     %{
-      id: client.user_id,
-      name: client.user.name,
-      surname: client.user.surname,
-      birthdate: client.user.birthdate,
-      email: client.user.email,
-      license: client.licence_number,
+      id: client.id,
+      name: client.name,
+      surname: client.surname,
+      birthdate: client.birthdate,
+      email: client.email,
+      license_number: client.license_number,
+      role: client.role
     }
   end
-
 end
